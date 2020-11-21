@@ -1,0 +1,71 @@
+$quad: 200px
+$opacity: 0.3
+
+body
+    font: 100% roboto
+
+h1
+    text-align: center
+div
+    display: block
+.container
+    width: 600px
+    margin: 0 auto
+    .simon
+        height: 400px
+        width: 400px
+        margin: 0 auto
+        float: left
+        border-radius: 50%
+        position: relative
+        .buttons
+            height: 100%
+            width: 100%            
+        .button
+            position: absolute
+        .red
+            opacity: $opacity
+            background: red
+            position: absolute
+            height: $quad
+            width: $quad
+            border-radius: 0 $quad 0 0;
+            bottom: 50%
+            left: 50%
+        .blue
+            opacity: $opacity
+            background: blue
+            position: absolute
+            height: $quad
+            width: $quad
+            border-radius: $quad 0 0 0
+            bottom: 50%
+            right: 50%
+        .yellow
+            opacity: $opacity
+            background: yellow
+            position: absolute
+            height: $quad
+            width: $quad
+            border-radius: 0 0 0 $quad
+            top: 50%
+            right: 50%
+        .green
+            opacity: $opacity
+            background: green
+            position: absolute
+            height: $quad
+            width: $quad
+            border-radius: 0 0 $quad 0
+            top: 50%
+            left: 50%
+    .gameInfo    
+        button
+            margin-top: 90px
+            background: lighten(blue, 30%)
+            font-size: 30px
+            display: inline-block
+            border: none
+        button:hover
+            background: lighten(blue, 32%)
+        .stepCounter
